@@ -16,8 +16,6 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
-		-webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
