@@ -12,6 +12,25 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '645972485603399', {
+em: 'insert_email_variable'
+});
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=645972485603399&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+
 	</head>
 	<body>
 
@@ -105,7 +124,7 @@ We also provide academic subject tutoring for any coursework your student might 
 										<textarea name="message" id="message" rows="4"></textarea>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="submit" value="Send Message" class="special" onClick="onClick()"/></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
@@ -380,5 +399,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
   ga('send', 'pageview');
 
 </script>
+		<script>
+		function onClick() { fbq('track', 'Lead', {
+				value: 5.00,
+				currency: 'USD'
+				});
+			   };
+
 	</body>
 </html>
