@@ -23,11 +23,6 @@ fbq('init', '645972485603399', {
 em: 'insert_email_variable'
 });
 fbq('track', 'PageView');
-		function onClick() { fbq('track', 'Lead', {
-				value: 5.00,
-				currency: 'USD'
-				});
-			   };
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=645972485603399&ev=PageView&noscript=1"
@@ -407,7 +402,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
   button.addEventListener(
     'click', 
     function() { 
-      fbq('track', 'submit', {
+      fbq('track', 'Lead', {
         value: 4.99,
         currency: 'USD' 
       });          
