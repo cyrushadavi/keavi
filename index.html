@@ -129,7 +129,7 @@ We also provide academic subject tutoring for any coursework your student might 
 										<textarea name="message" id="message" rows="4"></textarea>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" onClick="onClick()"/></li>
+										<li><input type="submit" value="Send Message" class="special" id="convertbutton"/></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
@@ -402,7 +402,19 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
   ga('create', 'UA-91107652-1', 'auto');
   ga('send', 'pageview');
-
+<script type="text/javascript">
+  var button = document.getElementById('convertbutton');
+  button.addEventListener(
+    'click', 
+    function() { 
+      fbq('track', 'submit', {
+        value: 4.99,
+        currency: 'USD' 
+      });          
+    },
+    false
+  );
+</script>
 </script>
 
 
